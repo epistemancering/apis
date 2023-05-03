@@ -1,6 +1,6 @@
 function list() {
     console.log("button clicked")
-    axios.get("https://swapi.dev/api/planets/?search=alderaan").then(function(response) {
+    axios.get("https://swapi.dev/api/planets?search=alderaan").then(function(response) {
         console.log(response)
         for (let index in response.data.results[0].residents) {
             console.log(index)
